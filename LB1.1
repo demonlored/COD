@@ -9,30 +9,35 @@ int main()
     {
         if ((a>b)&&(b>c))
         {
-            mx = a-3;
-            m = c+2;
+            mx = a;
+            m = c;
         }
         if ((a<b)&&(b<c))
         {
-            m = a+2;
-            mx = c-3;
+            m = a;
+            mx = c;
         }
         if ((a<c)&&(c<b))
         {
-            mx = b-3;
-            m = a+2;
+            mx = b;
+            m = a;
         }
         if ((b<c)&&(c<a))
         {
-            mx = a-3;
-            m = b+2;
+            mx = a;
+            m = b;
         }
         if ((b>c)&&(c<a))
         {
-            mx = b-3;
-            m = c+2;
+            mx = b;
+            m = c;
         }
-       printf("%d %d \n", m, mx);
+        if ((c>a)&&(a>b))
+        {
+            mx = c;
+            m = b;
+        }
+       printf("%d %d \n", m+2, mx-2);
     }
     else
     {

@@ -1,0 +1,50 @@
+#include <stdio.h>
+int main() {
+    printf("Enter the numbers one at a time (press Enter after each).\n");
+    int a,b,c;
+    int key=scanf("%d %d %d",&a,&b,&c);
+    if(key==3){
+        if(a==b&&b==c){
+            printf("3 numbers are equal!\n");
+        }
+        else{
+            if(a<b){
+                if(a<c){
+                    a+=2;
+                    if(b<c){
+                        c-=2;
+                    }
+                    else{
+                        b-=2;
+                    }
+                }
+                else{
+                    c+=2;
+                    b-=2;
+                }
+            }
+            else{
+                if(b<c){
+                    b+=2;
+                    if(a<c){
+                        c-=2;
+                    }
+                    else{
+                        a-=2;
+                    }
+                }
+                else{
+                    a-=2;
+                    c+=2;
+                }
+
+            }
+        }
+
+        printf("Result:\n1). %d\n2). %d\n3). %d\n",a,b,c);
+    }
+    else{
+        printf("Incorrect number!!!");
+    }
+
+}

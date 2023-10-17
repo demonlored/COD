@@ -6,39 +6,47 @@ int main()
     printf("Input a,b,c : ");
     int check = scanf("%d %d %d",&a,&b,&c);
     if(check == 3)
-    {
-        if ((a>b)&&(b>c))
+    {  
+        If(a==b&&b==c)
         {
-            a = a-2;
-            c = c+2;
+          printf("3 number");
         }
-        if ((a<b)&&(b<c))
+        else 
         {
-            a = a+2;
-            c = c-2;
+            if((a>b)&&(b>c))
+            {
+                a-=2;
+                b+=2;                     
+            }
+            if((b>a)&&(a>c))
+            {
+                b-=2;
+                a+=2;        
+            }
+            if((a>c)&&(c>b))
+            {
+                a-=2;
+                c+=2;
+            }
+            if((c>b)&&(b>a))
+            {
+                c+=2;
+                a-=2;
+            }
+            if((b>a)&&(a>c))
+            {
+                b-=2;
+                c+=2;
+            }
+            if((c>a)&&(a>b))
+            {
+                c-=2;
+                b+=2;
+            }
         }
-        if ((a<c)&&(c<b))
-        {
-            b = b-2;
-            a = a+2;
-        }
-        if ((b<c)&&(c<a))
-        {
-            a = a+2;
-            b = b-2;
-        }
-        if ((b>c)&&(c<a))
-        {
-            b = b-2;
-            c = c+2;
-        }
-        if ((c>a)&&(a>b))
-        {
-            c = c-2;
-            b = b+2;
-        }
-       printf("%d %d %d\n", a,b,c);
-    }
+    printf("%d %d %d\n", a,b,c);
+    
+    } 
     else
     {
         printf("wrong data\n");

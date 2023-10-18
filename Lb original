@@ -8,25 +8,53 @@ int main()
     if(check == 3)
                 {
                 if ((a == b) && (b == c))  
-                                        {
+                {
+                    printf("3 равные числа");
+                }
+                else
+                {
                                             if (a < b)
                                                     {
                                                       if (a < c)
                                                                 {
                                                                     a+=2;
-                                                                    if ()
-                                                                         {}
+                                                                    if (b<c)
+                                                                         {
+                                                                           c-=2;  
+                                                                         }
+                                                                    else 
+                                                                        {
+                                                                            b-=2;
+                                                                        }     
                                                                 }
+                                                      else
+                                                          {
+                                                              c+=2;
+                                                              b-=2;
+                                                          }            
                                                     }
                                             else
                                                 {
-                                                    
+                                                  if (b < c)
+                                                            { 
+                                                            b+=2;
+                                                            if(a < c)
+                                                                     {
+                                                                        c-=2; 
+                                                                     }
+                                                            else
+                                                                {
+                                                                    a-=2;
+                                                                }         
+                                                            }
+                                                  else 
+                                                      {
+                                                          a-=2;
+                                                          c+=2;
+                                                      }            
                                                 }
                                         }  
-                else
-                    {
-                        
-                    }
+                  printf("%d %d %d\n"a,b,c);
                 }
     else
         {

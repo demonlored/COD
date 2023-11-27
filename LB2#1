@@ -3,15 +3,14 @@
 int main()
 {
     int N,V,v;
-    printf("Ввод : \n");
     scanf("%d",&N);
+    printf("Ввод : %d \n",N);
     while(N>0)
     {
         v = N % 10;
-        V = V*10+v;
+        V = V*10+v-1;
         N = N / 10;
     }
-    printf("Вывод: \n",V);
+    printf("Вывод:  %d",V);
     return 0;
 }
-

@@ -1,1 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int N,V,v;
+    printf("Ввод : \n");
+    scanf("%d",&N);
+    while(N>0)
+    {
+        v = N % 10;
+        V = V*10+v;
+        N = N / 10;
+    }
+    printf("Вывод: \n",V);
+    return 0;
+}
 

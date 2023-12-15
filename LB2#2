@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,x,y,h;
+    scanf("a =%d\n",a);
+    scanf("b =%d\n",b);
+    scanf("h =%d\n",h);
+     if (a>b || h!=0)
+     { 
+     	printf("ошибка");
+     }
+    else
+   for(a>b;)
+    printf("Вывод:  %d",);
+    return 0;
+}

@@ -1,17 +1,23 @@
-#include<stdio.h>
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+ 
 int main()
 {
-    int a,b,x,y,h;
-    scanf("a =%d\n",a);
-    scanf("b =%d\n",b);
-    scanf("h =%d\n",h);
-     if (a>b || h!=0)
-     { 
-     	printf("ошибка");
-     }
-    else
-   for(a>b;)
-    printf("Вывод:  %d",);
+    int a,b,h,x;
+    double y;
+    printf("input a\n");
+    scanf("%d", &a);
+    printf("input b\n");
+    scanf("%d", &b);
+    printf("input h\n");
+    scanf("%d", &h);
+    for(a=a;a<=b;a+=h)
+    {
+        x=a;
+        y=log(1+x);
+        printf("h = %d\ty = %lf\n", h, y);
+    }
+ 
     return 0;
 }
